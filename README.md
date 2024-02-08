@@ -1,13 +1,11 @@
 <h1>Run the app in Kubernetes</h1>
-The folder k8s-specifications contains the YAML specifications of the Voting App's services.
+The folder named Voting-app contains the YAML specifications that are required to deploy the Voting App's services. To create the deployments and services, you can run the following command. It is important to note that this command will create these resources in your current namespace (default if you haven't changed it).
 
-Run the following command to create the deployments and services. Note it will create these resources in your current namespace (default if you haven't changed it.)
+<br>kubectl create -f Voting-app/
 
-kubectl create -f Voting-app/
+If you wish to remove these resources, you can run the following command:
 
-To remove them, run:
-
-kubectl delete -f  Voting-app/
+kubectl delete -f Voting-app/
 
 <h1 align="center">Architecture</h1>
 <img align="right" alt="Coding" width="400" src="https://miro.medium.com/v2/resize:fit:1400/format:webp/0*alcCLL8fj9_fZycq.png">
